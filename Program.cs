@@ -7,21 +7,15 @@ namespace CatWorx.BadgeMaker
     {
         static void Main(string[] args)
         {
-            Dictionary<string, int> myScoreBoard = new Dictionary<string, int>();
+            List<string> employees = new List<string>() { "adam", "amy" };
 
-            myScoreBoard.Add("firstInning", 10);
-            myScoreBoard.Add("secondInning", 20);
-            myScoreBoard.Add("thirdInning", 30);
-            myScoreBoard.Add("fourthInning", 40);
-            myScoreBoard.Add("fifthInning", 50);
+            employees.Add("barbara");
+            employees.Add("billy");
 
-            // Dictionary<string, int> myScoreBoard = new Dictionary<string, int>(){
-            // { "firstInning", 10 },
-            // { "secondInning", 20},
-            // { "thirdInning", 30},
-            // { "fourthInning", 40},
-            // { "fifthInning", 50}
-};
+            for(int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine("Element#{0} = {1}", i, employees[i]);
+            }
         }
     }
 }
