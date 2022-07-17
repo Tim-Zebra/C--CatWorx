@@ -22,7 +22,7 @@ namespace CatWorx.BadgeMaker
                 string input = Console.ReadLine();
                 if (input == "") 
                 {
-                break;
+                    break;
                 }
 
                 employees.Add(input);
