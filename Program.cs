@@ -3,19 +3,39 @@ using System.Collections.Generic;
 
 namespace CatWorx.BadgeMaker
 {
-    class Program
+  class Program
     {
         static void Main(string[] args)
         {
-            List<string> employees = new List<string>() { "adam", "amy" };
+            // This is our employee-getting code now
+            List<string> employees = GetEmployees();
 
-            employees.Add("barbara");
-            employees.Add("billy");
-
-            for(int i = 0; i < employees.Count; i++)
-            {
-                Console.WriteLine("Element#{0} = {1}", i, employees[i]);
-            }
+            PrintEmployees(employees);
         }
+
+        static List<string> GetEmployees()
+        {
+            List<string> employees = new List<string>();
+            while (true) 
+            {
+                Console.WriteLine("Please enter a name: (leave empty to exit): ");
+                string input = Console.ReadLine();
+                if (input == "") 
+                {
+                break;
+                }
+
+                employees.Add(input);
+            }
+            // This is important!
+            return employees;
+        }
+          static void PrintEmployees(List<string> employees)
+            {
+                for (int i = 0; i < employees.Count; i++)
+                {
+                Console.WriteLine(employees[i]);
+                }
+            }
     }
 }
