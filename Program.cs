@@ -8,8 +8,8 @@ namespace CatWorx.BadgeMaker
         static void Main(string[] args)
         {
             // This is our employee-getting code now
-            List<Employee> employees = PeopleFetcher.GetEmployees();
-
+            // List<Employee> employees = PeopleFetcher.GetEmployees();
+            List<Employee> employees = PeopleFetcher.GetFromApi();
             // Prints list of employees
             Util.PrintEmployees(employees);
             // Saves list of employees
