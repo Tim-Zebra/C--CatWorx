@@ -73,8 +73,6 @@ namespace CatWorx.BadgeMaker
       Font monoFont = new Font("Courier New", FONT_SIZE);
       SolidBrush brush = new SolidBrush(Color.Black);
 
-      DrawString(String, Font, Brush, RectangleF, StringFormat);
-
       // instance of WebClient is disposed after code in the block has run
       using(WebClient client = new WebClient())
       {
