@@ -1,7 +1,8 @@
 using System;
 using System.IO;
-using System.Collections.Generic;
+using System.Net;
 using System.Drawing;
+using System.Collections.Generic;
 
 namespace CatWorx.BadgeMaker
 {
@@ -63,5 +64,14 @@ namespace CatWorx.BadgeMaker
       int EMPLOYEE_ID_START_Y = 690;
       int EMPLOYEE_ID_WIDTH = BADGE_WIDTH;
       int EMPLOYEE_ID_HEIGHT = 100;
+
+      // instance of WebClient is disposed after code in the block has run
+    using(WebClient client = new WebClient())
+    {
+      for (int i = 0; i < employees.Count; i++)
+      {
+
+      }
+    }
     }
 }
