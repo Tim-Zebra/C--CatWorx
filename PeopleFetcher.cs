@@ -1,10 +1,11 @@
 using System;
+using System.Net;
 using System.Collections.Generic;
 
 namespace  CatWorx.BadgeMaker {
   class PeopleFetcher 
   {
-    static List<Employee> GetEmployees()
+    public static List<Employee> GetEmployees()
     {
         List<Employee> employees = new List<Employee>();
         while(true) 
@@ -31,6 +32,18 @@ namespace  CatWorx.BadgeMaker {
         }
 
         return employees;
+    }
+
+    public static List<Employee> GetFromApi() {
+      List<Employee> employees = new List<Employee>();
+
+      using (WebClient client = new WebClient())
+      {
+        // Gets API response
+        string response = client.DownloadString("https://randomuser.me/api/?results=10&nat=us&inc=name,id,picture");
+      }
+
+      return employees;
     }
   }
 }
