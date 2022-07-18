@@ -14,6 +14,7 @@ namespace CatWorx.BadgeMaker
             Util.PrintEmployees(employees);
             // Saves list of employees
             Util.MakeCSV(employees);
+            Util.MakeBadges(employees);
         }
 
         static List<Employee> GetEmployees()

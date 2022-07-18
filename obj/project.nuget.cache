@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hKnPzh1oYiWKjQAAt97LF6wnstuHLDPtWcW+cr8wJ7mFiX4sVfahrlp4axF40Goy71nFoenA3sxzVGw2AIelNQ==",
+  "dgSpecHash": "QgY9WNNDLSKmOCAnoD7wQZEVkl8PryvM4QTfw7bz9Nf2OmvVe5EfDsM/dvGL4dlt9SSHBKJH+E9V0nLvo6BNPA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mog_f\\Documents\\Repositories for GitHub\\CatWorx.BadgeMaker\\CatWorx.BadgeMaker.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mog_f\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\mog_f\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
